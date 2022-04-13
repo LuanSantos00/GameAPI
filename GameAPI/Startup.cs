@@ -32,6 +32,25 @@ namespace GameAPI
         {
             services.AddControllers();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "GameAPI",
+                    Version = "v1",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Luan Santos",
+                        Email = "luancosmefilho@gmail.com",
+                        Url = new Uri("https://www.linkedin.com/in/-luansantos-/")
+                    }
+
+                });
+                var apiPath = Path.Combine(AppContext.BaseDirectory, "GameAPI.xml");
+                c.IncludeXmlComments(apiPath);
+
+            });
+
             //  Repositories
             services.AddScoped<IGameRepository, GameRepository>();
         }
@@ -47,6 +66,10 @@ namespace GameAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI();
 
             app.UseAuthorization();
 
