@@ -28,4 +28,3 @@ C:\Users\luanc\Documents\.net\GameAPI\GameAPI\bin\Debug\netcoreapp3.1\Swashbuckl
 C:\Users\luanc\Documents\.net\GameAPI\GameAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\luanc\Documents\.net\GameAPI\GameAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\luanc\Documents\.net\GameAPI\GameAPI\bin\Debug\netcoreapp3.1\GameAPI.xml
-C:\Users\luanc\Documents\.net\GameAPI\GameAPI\obj\Debug\netcoreapp3.1\GameAPI.csprojAssemblyReference.cache
